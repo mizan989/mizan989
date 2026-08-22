@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="320" viewBox="0 0 490 320">
+  <rect x="0.5" y="0.5" width="489" height="319" rx="10"
+        fill="#0d1117" stroke="#30363d" />
+  <circle cx="22" cy="22" r="6" fill="#ff5f56" />
+  <circle cx="42" cy="22" r="6" fill="#ffbd2e" />
+  <circle cx="62" cy="22" r="6" fill="#27c93f" />
+  <text x="24" y="38" font-family="Consolas, monospace" font-size="13"
+        fill="#8b949e">mizan989@github ~ %</text>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.00s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.00s" dur="0.45s" fill="freeze" />
+    <text x="24" y="56" font-family="Consolas, monospace" font-size="15" fill="#c9d1d9"><tspan fill="#39d353" font-weight="600">user</tspan>: mizan@github</text>
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.12s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.12s" dur="0.45s" fill="freeze" />
+    <line x1="24" y1="78" x2="466" y2="78" stroke="#30363d" stroke-width="1" />
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.24s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.24s" dur="0.45s" fill="freeze" />
+    <text x="24" y="116" font-family="Consolas, monospace" font-size="15" fill="#39d353"><tspan fill="#39d353" font-weight="600">Now</tspan>: Cybersecurity student, full-stack "vibe coder"</text>
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.36s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.36s" dur="0.45s" fill="freeze" />
+    <text x="24" y="146" font-family="Consolas, monospace" font-size="15" fill="#c9d1d9"><tspan fill="#39d353" font-weight="600">Prev</tspan>: Building web + security projects since 2023</text>
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.48s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.48s" dur="0.45s" fill="freeze" />
+    <text x="24" y="176" font-family="Consolas, monospace" font-size="15" fill="#c9d1d9"><tspan fill="#39d353" font-weight="600">Stack</tspan>: React / Node.js / Flask / MongoDB / Docker</text>
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.60s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.60s" dur="0.45s" fill="freeze" />
+    <text x="24" y="206" font-family="Consolas, monospace" font-size="15" fill="#c9d1d9"><tspan fill="#39d353" font-weight="600">Focus</tspan>: Pentesting, network security, web dev</text>
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.72s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.72s" dur="0.45s" fill="freeze" />
+    <text x="24" y="236" font-family="Consolas, monospace" font-size="15" fill="#39d353"><tspan fill="#39d353" font-weight="600">Flagship</tspan>: LooseNotion · NoVAult · CyberSentinel</text>
+  </g>
+  <g opacity="0" transform="translate(-8,0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.84s" dur="0.45s" fill="freeze" />
+    <animateTransform attributeName="transform" type="translate" from="-8,0" to="0,0" begin="0.84s" dur="0.45s" fill="freeze" />
+    <text x="24" y="266" font-family="Consolas, monospace" font-size="15" fill="#c9d1d9"><tspan fill="#39d353" font-weight="600">Site</tspan>: md-mizan.vercel.app</text>
+  </g>
+</svg>
