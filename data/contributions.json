@@ -1,85 +1,15 @@
 {
   "username": "mizan989",
-  "fetched_at": "2026-08-22T17:12:20.366023+00:00",
+  "fetched_at": "2026-09-01T16:33:23.853259+00:00",
   "total": 0,
   "current_streak": 0,
   "longest_streak": 0,
   "best_day": {
-    "date": "2025-08-17",
+    "date": "2025-08-31",
     "level": 0,
     "count": 0
   },
   "days": [
-    {
-      "date": "2025-08-17",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-18",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-19",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-20",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-21",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-22",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-23",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-24",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-25",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-26",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-27",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-28",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-29",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-08-30",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-08-31",
       "level": 0,
@@ -1863,6 +1793,56 @@
     {
       "date": "2026-08-22",
       "level": 1,
+      "count": 0
+    },
+    {
+      "date": "2026-08-23",
+      "level": 4,
+      "count": 0
+    },
+    {
+      "date": "2026-08-24",
+      "level": 0,
+      "count": 0
+    },
+    {
+      "date": "2026-08-25",
+      "level": 1,
+      "count": 0
+    },
+    {
+      "date": "2026-08-26",
+      "level": 1,
+      "count": 0
+    },
+    {
+      "date": "2026-08-27",
+      "level": 0,
+      "count": 0
+    },
+    {
+      "date": "2026-08-28",
+      "level": 0,
+      "count": 0
+    },
+    {
+      "date": "2026-08-29",
+      "level": 0,
+      "count": 0
+    },
+    {
+      "date": "2026-08-30",
+      "level": 0,
+      "count": 0
+    },
+    {
+      "date": "2026-08-31",
+      "level": 0,
+      "count": 0
+    },
+    {
+      "date": "2026-09-01",
+      "level": 0,
       "count": 0
     }
   ]
