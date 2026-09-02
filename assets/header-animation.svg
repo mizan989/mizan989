@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="390" viewBox="0 0 860 390" role="img" aria-label="Md Mizan Terminal Header">
+  <defs>
+    <linearGradient id="headerBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d"/>
+      <stop offset="25%" stop-color="#238636"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="75%" stop-color="#8957e5"/>
+      <stop offset="100%" stop-color="#30363d"/>
+    </linearGradient>
+    <linearGradient id="bodyGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect x="0.5" y="0.5" width="859" height="389" rx="10" fill="url(#bodyGlow)" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Top Bar Container -->
+  <rect x="0.5" y="0.5" width="859" height="42" rx="10" fill="#161b22"/>
+  <rect x="0.5" y="32" width="859" height="11" fill="#161b22"/>
+  <line x1="0" y1="43" x2="860" y2="43" stroke="url(#headerBorder)" stroke-width="1.2"/>
+
+  <!-- Window Controls -->
+  <circle cx="22" cy="21.5" r="5.5" fill="#ff5f56"/>
+  <circle cx="39" cy="21.5" r="5.5" fill="#ffbd2e"/>
+  <circle cx="56" cy="21.5" r="5.5" fill="#27c93f"/>
+
+  <!-- Terminal Title -->
+  <text x="76" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'SFMono-Regular', Consolas, monospace" font-size="12" fill="#8b949e" font-weight="500">mizan@terminal: ~/portfolio</text>
+
+  <!-- Online Status Beacon -->
+  <g transform="translate(635, 12)">
+    <circle cx="9" cy="9.5" r="4" fill="#3fb950"/>
+    <circle cx="9" cy="9.5" r="4" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.8">
+      <animate attributeName="r" values="4;10" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="22" y="13.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'SFMono-Regular', Consolas, monospace" font-size="11.5" fill="#8b949e">status: <tspan fill="#3fb950" font-weight="600">active</tspan> · open to build</text>
+  </g>
+
+  <!-- LINE 1: whoami -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.10s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="0.10s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="76" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#39d353" font-weight="600">mizan@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#f0f6fc">whoami</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 2: whoami response -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.30s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="0.30s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="102" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#79c0ff" font-weight="600">Md Mizan</tspan> <tspan fill="#8b949e">—</tspan> <tspan fill="#c9d1d9">Full-Stack &amp; Systems Security Engineer</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 3: mission command -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="0.55s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="138" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#39d353" font-weight="600">mizan@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#f0f6fc">cat mission.txt</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 4: mission response -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="0.75s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="0.75s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="164" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#d2a8ff">»</tspan> <tspan fill="#e6edf3">Engineering zero-knowledge security models, collaborative SaaS &amp; cinematic web systems.</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 5: flagship command -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.00s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="1.00s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="200" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#39d353" font-weight="600">mizan@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#f0f6fc">ls ./flagships/</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 6: flagship list 1 -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.20s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="1.20s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="226" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">
+      <tspan fill="#58a6ff" font-weight="600">NoVAult</tspan><tspan fill="#8b949e">[AES-GCM/Argon2id]</tspan>     <tspan fill="#58a6ff" font-weight="600">LooseNotion</tspan><tspan fill="#8b949e">[Next.js/Supabase]</tspan>     <tspan fill="#58a6ff" font-weight="600">Storebox</tspan><tspan fill="#8b949e">[GSAP/Motion]</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 7: flagship list 2 -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.35s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="1.35s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="248" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">
+      <tspan fill="#58a6ff" font-weight="600">CyberSentinel</tspan><tspan fill="#8b949e">[Nmap/CVE/Flask]</tspan>  <tspan fill="#58a6ff" font-weight="600">Skylio</tspan><tspan fill="#8b949e">[Solar Horizon API]</tspan>      <tspan fill="#58a6ff" font-weight="600">CalcVerse</tspan><tspan fill="#8b949e">[Math Engine]</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 8: stack command -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.60s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="1.60s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="284" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#39d353" font-weight="600">mizan@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#f0f6fc">echo $PRIMARY_STACK</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 9: stack response -->
+  <g opacity="0" transform="translate(-6, 0)">
+    <animate attributeName="opacity" from="0" to="1" begin="1.80s" dur="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="-6, 0" to="0, 0" begin="1.80s" dur="0.4s" fill="freeze"/>
+    <text x="24" y="310" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#3fb950">TypeScript</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#58a6ff">Next.js</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#58a6ff">React</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#58a6ff">Node.js</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#d2a8ff">Python/Flask</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#3fb950">Supabase</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#ff7b72">AES-256-GCM</tspan> <tspan fill="#8b949e">·</tspan> <tspan fill="#f2cc60">Docker</tspan>
+    </text>
+  </g>
+
+  <!-- LINE 10: Active interactive prompt with blinking cursor -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2.05s" dur="0.2s" fill="freeze"/>
+    <text x="24" y="348" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">
+      <tspan fill="#39d353" font-weight="600">mizan@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~</tspan><tspan fill="#8b949e">$ </tspan>
+    </text>
+    <!-- Blinking Cursor -->
+    <rect x="175" y="335" width="8.5" height="16.5" rx="1.5" fill="#39d353">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="2.05s"/>
+    </rect>
+  </g>
+</svg>

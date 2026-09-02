@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="4" viewBox="0 0 860 4" role="presentation">
+  <defs>
+    <linearGradient id="baseTrack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#30363d" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#30363d" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="laserGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#39d353" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+      <stop offset="65%" stop-color="#8957e5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#8957e5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Track -->
+  <line x1="0" y1="2" x2="860" y2="2" stroke="url(#baseTrack)" stroke-width="1"/>
+  <!-- Animated Laser Beam -->
+  <rect x="-240" y="0.5" width="240" height="3" rx="1.5" fill="url(#laserGlow)">
+    <animate attributeName="x" from="-240" to="860" dur="4s" repeatCount="indefinite" ease="linear"/>
+  </rect>
+</svg>
