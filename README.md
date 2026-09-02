@@ -132,5 +132,5 @@ I am a **Full-Stack & Systems Security Engineer** building resilient, production
   <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
   <br /><br />
 
-  <sub>Crafted with precision &amp; minimalist engineering by <a href="https://md-mizan.vercel.app"><b>Md Mizan</b></a></sub>
+  
 </div>
