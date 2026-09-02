@@ -121,8 +121,11 @@ I am a **Full-Stack & Systems Security Engineer** building resilient, production
   ### 📊 Telemetry &amp; Activity
 
   <a href="https://github.com/mizan989">
-    <img src="https://github-readme-stats.vercel.app/api?username=mizan989&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=39d353&text_color=c9d1d9" alt="Md Mizan's GitHub Stats" height="165" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mizan989&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" alt="Top Languages" height="165" />
+    <img src="./assets/telemetry-card.svg" alt="Md Mizan Telemetry and Portfolio Metrics" width="100%" />
+  </a>
+  <br /><br />
+  <a href="https://github.com/mizan989">
+    <img src="https://streak-stats.demolab.com/?user=mizan989&amp;theme=tokyonight&amp;hide_border=true&amp;background=0d1117&amp;border=30363d&amp;stroke=30363d&amp;ring=39d353&amp;fire=58a6ff&amp;currStreakLabel=58a6ff" alt="GitHub Streak Stats" />
   </a>
 
   <br /><br />

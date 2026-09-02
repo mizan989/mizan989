@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="System Metrics and Architecture Telemetry">
+  <defs>
+    <linearGradient id="panelBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#30363d"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="pulseBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#39d353" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="0.5" y="0.5" width="859" height="209" rx="10" fill="url(#cardBg)" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Top Status Bar -->
+  <rect x="0.5" y="0.5" width="859" height="38" rx="10" fill="#161b22"/>
+  <rect x="0.5" y="28" width="859" height="10" fill="#161b22"/>
+  <line x1="0" y1="38" x2="860" y2="38" stroke="url(#panelBorder)" stroke-width="1"/>
+
+  <!-- Top Title -->
+  <text x="24" y="24" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11.5" fill="#8b949e" font-weight="600" letter-spacing="1">TELEMETRY // PORTFOLIO ARCHITECTURE</text>
+
+  <!-- Status Light -->
+  <g transform="translate(680, 14)">
+    <circle cx="6" cy="9" r="4" fill="#3fb950"/>
+    <circle cx="6" cy="9" r="4" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.8">
+      <animate attributeName="r" values="4;9" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="12.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="11" fill="#3fb950" font-weight="600">ALL SYSTEMS ONLINE</text>
+  </g>
+
+  <!-- Column Dividers -->
+  <line x1="286" y1="48" x2="286" y2="195" stroke="#30363d" stroke-dasharray="3 3"/>
+  <line x1="573" y1="48" x2="573" y2="195" stroke="#30363d" stroke-dasharray="3 3"/>
+
+  <!-- COLUMN 1: PUBLIC REPOSITORIES -->
+  <g transform="translate(24, 52)">
+    <text x="0" y="32" font-family="'SFMono-Regular', Consolas, monospace" font-size="34" fill="#58a6ff" font-weight="700">6</text>
+    <text x="32" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#8b949e" text-transform="uppercase" letter-spacing="0.5">DEPLOYED</text>
+    <text x="32" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#f0f6fc" font-weight="600">Public Systems</text>
+    
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• NoVAult · Zero-Knowledge Vault</text>
+    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• LooseNotion · Notion SaaS Clone</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Storebox · GSAP Motion Platform</text>
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• CyberSentinel · Vuln Scanner</text>
+  </g>
+
+  <!-- COLUMN 2: SECURITY & CRYPTOGRAPHY -->
+  <g transform="translate(310, 52)">
+    <text x="0" y="32" font-family="'SFMono-Regular', Consolas, monospace" font-size="34" fill="#39d353" font-weight="700">0</text>
+    <text x="30" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#8b949e" text-transform="uppercase" letter-spacing="0.5">SECURITY</text>
+    <text x="30" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#f0f6fc" font-weight="600">Zero-Knowledge Secrets</text>
+    
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Client-Side AES-256-GCM</text>
+    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Argon2id Key Derivation</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Supabase Row Level Security</text>
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• CVSS Vulnerability Risk Scoring</text>
+  </g>
+
+  <!-- COLUMN 3: STACK & INFRASTRUCTURE -->
+  <g transform="translate(597, 52)">
+    <text x="0" y="32" font-family="'SFMono-Regular', Consolas, monospace" font-size="34" fill="#d2a8ff" font-weight="700">100%</text>
+    <text x="88" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#8b949e" text-transform="uppercase" letter-spacing="0.5">UPTIME</text>
+    <text x="88" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#f0f6fc" font-weight="600">Live Deployments</text>
+    
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Next.js 14 App Router &amp; React 19</text>
+    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Node.js / Express &amp; Python Flask</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• GSAP ScrollTrigger &amp; Lenis Physics</text>
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Containerized with Docker &amp; Nginx</text>
+  </g>
+
+  <!-- Bottom Accent Pulse Line -->
+  <rect x="-180" y="208" width="180" height="2" fill="url(#pulseBeam)">
+    <animate attributeName="x" from="-180" to="860" dur="3.5s" repeatCount="indefinite" ease="linear"/>
+  </rect>
+</svg>
