@@ -3,13 +3,11 @@
     <img src="./assets/portrait.svg" alt="Md Mizan" width="300" />
   </a>
 
-  <br /><br />
+  <br />
 
-  <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=500&lines=Md+Mizan;Full-Stack+Engineer;Software+Developer" alt="Md Mizan Typing Animation" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2500&pause=1000&color=39D353&center=true&vCenter=true&repeat=false&width=435&lines=Md+Mizan" alt="Md Mizan" />
 
-  <br /><br />
+  <br />
 
   <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Portfolio-md--mizan.vercel.app-161b22?style=flat-square&logo=vercel&logoColor=white&labelColor=0d1117" alt="Portfolio" />
@@ -44,15 +42,11 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 - **Key Capabilities:** Master password entropy validation, categorized digital vault (credentials, secure notes, cards), automatic idle session lock, and clipboard memory auto-clearing.
 - **Stack:** `TypeScript` · `React 18` · `Node.js` · `Express` · `MongoDB Atlas` · `JWT` · `Tailwind CSS`
 
-<br />
-
 #### 2. [LooseNotion](https://github.com/mizan989/LooseNotion-Notion_Clone) · [Live Demo ↗](https://loosenotion.vercel.app)
 > **Full-Stack Notion Collaborative Workspace & Knowledge Base**
 - **System Design:** Production-grade collaborative productivity workspace built with Next.js 14 App Router and Supabase PostgreSQL with strict Row Level Security (RLS) policies.
 - **Key Capabilities:** Block-based rich text editor powered by **Tiptap** & **ProseMirror** with `/` slash commands, infinite recursive drag-and-drop page hierarchy, multi-view relational databases (Table, Kanban Board, List), and custom icon/cover pickers.
 - **Stack:** `Next.js 14` · `TypeScript` · `Supabase (PostgreSQL + Auth + RLS)` · `Tailwind CSS` · `Tiptap` · `dnd-kit`
-
-<br />
 
 #### 3. [Storebox](https://github.com/mizan989/Storebox_clone) · [Live Demo ↗](https://storebox-clone.vercel.app/)
 > **High-Performance Marketing, Web & SEO/AEO Platform**
@@ -60,15 +54,11 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 - **Key Capabilities:** Sequential reading illumination effects, live scroll progress telemetry, floating action button with accessible Formspree draft request modal, dynamic multi-currency micro-CMS localization, and complete multi-page architecture.
 - **Stack:** `Vite` · `JavaScript (ES2022)` · `CSS3` · `GSAP 3.12` · `ScrollTrigger` · `Lenis` · `Formspree AJAX`
 
-<br />
-
 #### 4. [CyberSentinel](https://github.com/mizan989/CyberSentinel-Vulnerability_Scanner) · [Live Demo ↗](https://cybersentinel-mizan.onrender.com)
 > **Automated Network Vulnerability Scanner & Security Dashboard**
 - **Assessment Engine:** Automated security auditing daemon performing non-intrusive TCP port scans, host discovery, and daemon/service version fingerprinting via Nmap integration.
 - **Key Capabilities:** Offline CVE intelligence database correlating detected banners with known exploits, automated CVSS-aligned risk scoring (0–100), and downloadable executive PDF & HTML vulnerability audit reports.
 - **Stack:** `Python 3.11` · `Flask` · `Nmap Core (python-nmap)` · `Docker` · `Nginx` · `Tailwind CSS` · `ReportLab`
-
-<br />
 
 #### 5. [Skylio](https://github.com/mizan989/Skylio-Weather_App) · [Live Demo ↗](https://skylio.vercel.app)
 > **Minimalist Precision Weather Application Powered by Open-Meteo API**
@@ -76,15 +66,11 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 - **Key Capabilities:** Signature dynamic solar horizon canvas whose gradient adapts in real-time to solar angles and weather conditions, hourly trend curves, and zero-key meteorological telemetry via the Open-Meteo API.
 - **Stack:** `React 19` · `TypeScript` · `Vite` · `Tailwind CSS v4` · `Framer Motion` · `Open-Meteo API`
 
-<br />
-
 #### 6. [CalcVerse](https://github.com/mizan989/CalcVerse-Scientific_Calculator) · [Live Demo ↗](https://mizan989.github.io/CalcVerse-Scientific_Calculator/)
 > **Modern Scientific Calculator with History Ledger & Visual Themes**
 - **Computational Core:** Robust scientific calculation engine built on **mathjs** with persistent calculation ledger and keyboard-accessible navigation.
 - **Key Capabilities:** Arithmetic, trigonometry, logarithms, powers, roots, factorials, instant Degree (DEG) vs. Radian (RAD) mode switching, memory register controls (M+, M-, MR, MC), and low-strain color themes.
 - **Stack:** `React 18` · `JavaScript` · `Tailwind CSS` · `mathjs`
-
-<br />
 
 ---
 
@@ -137,7 +123,6 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 ---
 
 <div align="center">
-  <br />
   <h3>📊 Activity</h3>
 
   <picture>
@@ -145,23 +130,4 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake.svg" />
     <img alt="Md Mizan Contribution Snake Animation" src="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake.svg" width="100%" />
   </picture>
-
-  <br /><br />
-
-  <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Portfolio-md--mizan.vercel.app-161b22?style=flat-square&logo=vercel&logoColor=white&labelColor=0d1117" alt="Portfolio" />
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/mizann989" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/LinkedIn-in%2Fmizann989-161b22?style=flat-square&logo=linkedin&logoColor=0a66c2&labelColor=0d1117" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/mizan989" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/GitHub-mizan989-161b22?style=flat-square&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="mailto:mizanmuhammad20@gmail.com">
-    <img src="https://img.shields.io/badge/Email-mizanmuhammad20-161b22?style=flat-square&logo=gmail&logoColor=ea4335&labelColor=0d1117" alt="Email" />
-  </a>
-  <br /><br />
 </div>
