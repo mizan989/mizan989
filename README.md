@@ -33,9 +33,9 @@
 
 <br />
 
-### ⚡ Engineering Focus
+### ⚡ About
 
-Specializing in high-reliability software architecture, end-to-end type safety, and systems security. I focus on creating zero-compromise digital platforms where resilient backend protocols seamlessly interface with fluid, accessible, and performant interfaces.
+Full-Stack & Generative Systems Engineer specializing in zero-knowledge security, collaborative SaaS platforms, and high-performance web applications.
 
 ---
 
@@ -124,12 +124,7 @@ Specializing in high-reliability software architecture, end-to-end type safety, 
   <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
   <br /><br />
 
-  ### 📊 Telemetry &amp; Activity
-
-  <a href="https://github.com/mizan989">
-    <img src="./assets/telemetry-card.svg" alt="Md Mizan Telemetry and Portfolio Metrics" width="100%" />
-  </a>
-  <br /><br />
+  ### 📊 Activity
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake-dark.svg" />
