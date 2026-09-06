@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/header-animation.svg" alt="Md Mizan — Full-Stack &amp; Security Systems Engineer" width="100%" />
+    <img src="./assets/header-animation.svg" alt="Md Mizan — Full-Stack &amp; Generative Systems Engineer" width="100%" />
   </a>
 
   <br /><br />
@@ -29,7 +29,7 @@
 
 ### ⚡ About
 
-I am a **Full-Stack & Systems Security Engineer** building resilient, production-grade applications. My work spans **client-side zero-knowledge cryptographic vaults**, **collaborative SaaS architectures** with real-time multi-view databases, **network vulnerability assessment engines**, and **cinematic web experiences** crafted with pixel-level motion choreography.
+I am a **Full-Stack & Generative Systems Engineer** building resilient, production-grade applications. My work spans **client-side zero-knowledge cryptographic vaults**, **collaborative SaaS architectures** with real-time multi-view databases, **network vulnerability assessment engines**, and **cinematic web experiences** crafted with pixel-level motion choreography.
 
 ---
 
@@ -68,7 +68,7 @@ I am a **Full-Stack & Systems Security Engineer** building resilient, production
 <br />
 
 #### 5. [Skylio](https://github.com/mizan989/Skylio-Weather_App) · [Live Demo ↗](https://skylio.vercel.app)
-> **Minimalist Precision Weather Application with Dynamic Solar Horizon**
+> **Minimalist Precision Weather Application Powered by Open-Meteo API**
 - **Interface Design:** Type-forward meteorological application emphasizing typographic rhythm and kinetic micro-animations over cluttered dashboards.
 - **Key Capabilities:** Signature dynamic solar horizon canvas whose gradient adapts in real-time to solar angles and weather conditions, hourly trend curves, and zero-key meteorological telemetry via the Open-Meteo API.
 - **Stack:** `React 19` · `TypeScript` · `Vite` · `Tailwind CSS v4` · `Framer Motion` · `Open-Meteo API`
@@ -123,6 +123,13 @@ I am a **Full-Stack & Systems Security Engineer** building resilient, production
   <a href="https://github.com/mizan989">
     <img src="./assets/telemetry-card.svg" alt="Md Mizan Telemetry and Portfolio Metrics" width="100%" />
   </a>
+  <br /><br />
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake.svg" />
+    <img alt="Md Mizan Contribution Snake Animation" src="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake.svg" width="100%" />
+  </picture>
   <br /><br />
   <a href="https://github.com/mizan989">
     <img src="https://streak-stats.demolab.com/?user=mizan989&amp;theme=tokyonight&amp;hide_border=true&amp;background=0d1117&amp;border=30363d&amp;stroke=30363d&amp;ring=39d353&amp;fire=58a6ff&amp;currStreakLabel=58a6ff" alt="GitHub Streak Stats" />
