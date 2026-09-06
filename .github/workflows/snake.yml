@@ -26,9 +26,11 @@ jobs:
           outputs: |
             dist/github-snake.svg?color_snake=#1f6feb&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
             dist/github-snake-dark.svg?color_snake=#58a6ff&color_dots=#2d3343,#0e4429,#006d32,#26a641,#39d353
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
