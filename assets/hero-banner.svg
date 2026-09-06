@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="130" viewBox="0 0 860 130" role="img" aria-label="Md Mizan Identity Spec">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#111622"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#58a6ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#39d353" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#8957e5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#8957e5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f0f6fc"/>
+      <stop offset="100%" stop-color="#79c0ff"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#30363d" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="pulseGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#39d353" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container Base -->
+  <rect x="0.5" y="0.5" width="859" height="129" rx="10" fill="url(#bannerBg)" stroke="#30363d" stroke-width="1"/>
+  <rect x="1" y="1" width="858" height="128" rx="9" fill="url(#grid)"/>
+
+  <!-- Top Ambient Glow Beam -->
+  <line x1="12" y1="1" x2="848" y2="1" stroke="url(#accentLine)" stroke-width="1.8"/>
+
+  <!-- LEFT COLUMN: Identity & Spec -->
+  <!-- Status Pill -->
+  <g transform="translate(32, 22)">
+    <rect x="0" y="0" width="186" height="22" rx="11" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
+    <circle cx="12" cy="11" r="3.5" fill="#3fb950"/>
+    <circle cx="12" cy="11" r="3.5" fill="none" stroke="#3fb950" stroke-width="1.2" opacity="0.8">
+      <animate attributeName="r" values="3.5;8" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="24" y="14.5" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="10.5" fill="#8b949e" letter-spacing="0.5">SYS: <tspan fill="#3fb950" font-weight="600">ACTIVE</tspan> · OPEN TO BUILD</text>
+  </g>
+
+  <!-- Name -->
+  <text x="32" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="url(#textGrad)" letter-spacing="1.5">MD MIZAN</text>
+
+  <!-- Spec Tagline -->
+  <text x="34" y="104" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11.5" fill="#8b949e" letter-spacing="1.2">
+    <tspan fill="#58a6ff">ROLE //</tspan> FULL-STACK &amp; GENERATIVE SYSTEMS ENGINEER
+  </text>
+
+  <!-- RIGHT COLUMN: System Telemetry Labels -->
+  <g transform="translate(620, 24)">
+    <!-- Location -->
+    <text x="208" y="16" text-anchor="end" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#8b949e" letter-spacing="0.8">
+      <tspan fill="#30363d">LOC //</tspan> <tspan fill="#c9d1d9">KOLKATA, IN</tspan>
+    </text>
+
+    <!-- Timezone / Mode -->
+    <text x="208" y="44" text-anchor="end" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#8b949e" letter-spacing="0.8">
+      <tspan fill="#30363d">TZ //</tspan> <tspan fill="#c9d1d9">IST (UTC+05:30)</tspan>
+    </text>
+
+    <!-- Architecture Focus -->
+    <text x="208" y="72" text-anchor="end" font-family="'SFMono-Regular', Consolas, Menlo, monospace" font-size="11" fill="#8b949e" letter-spacing="0.8">
+      <tspan fill="#30363d">FOCUS //</tspan> <tspan fill="#58a6ff">ZERO-KNOWLEDGE &amp; SAAS</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom Accent Pulse -->
+  <rect x="-140" y="128.5" width="140" height="1.5" fill="url(#pulseGlow)">
+    <animate attributeName="x" from="-140" to="860" dur="4s" repeatCount="indefinite" ease="linear"/>
+  </rect>
+</svg>

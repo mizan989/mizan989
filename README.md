@@ -6,7 +6,7 @@
   <br /><br />
 
   <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/header-animation.svg" alt="Md Mizan — Full-Stack &amp; Generative Systems Engineer" width="100%" />
+    <img src="./assets/hero-banner.svg" alt="Md Mizan Identity Spec" width="100%" />
   </a>
 
   <br /><br />
@@ -33,9 +33,9 @@
 
 <br />
 
-### ⚡ About
+### ⚡ Engineering Focus
 
-I am a **Full-Stack & Generative Systems Engineer** building resilient, production-grade applications. My work spans **client-side zero-knowledge cryptographic vaults**, **collaborative SaaS architectures** with real-time multi-view databases, **network vulnerability assessment engines**, and **cinematic web experiences** crafted with pixel-level motion choreography.
+Specializing in high-reliability software architecture, end-to-end type safety, and systems security. I focus on creating zero-compromise digital platforms where resilient backend protocols seamlessly interface with fluid, accessible, and performant interfaces.
 
 ---
 
@@ -145,5 +145,20 @@ I am a **Full-Stack & Generative Systems Engineer** building resilient, producti
   <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
   <br /><br />
 
-  
+  <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Portfolio-md--mizan.vercel.app-161b22?style=flat-square&logo=vercel&logoColor=white&labelColor=0d1117" alt="Portfolio" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/mizann989" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-in%2Fmizann989-161b22?style=flat-square&logo=linkedin&logoColor=0a66c2&labelColor=0d1117" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/mizan989" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/GitHub-mizan989-161b22?style=flat-square&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="mailto:mizanmuhammad20@gmail.com">
+    <img src="https://img.shields.io/badge/Email-mizanmuhammad20-161b22?style=flat-square&logo=gmail&logoColor=ea4335&labelColor=0d1117" alt="Email" />
+  </a>
+  <br /><br />
 </div>

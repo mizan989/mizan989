@@ -47,10 +47,10 @@
     <text x="32" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#8b949e" text-transform="uppercase" letter-spacing="0.5">DEPLOYED</text>
     <text x="32" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#f0f6fc" font-weight="600">Public Systems</text>
     
-    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• NoVAult · Zero-Knowledge Vault</text>
-    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• LooseNotion · Notion SaaS Clone</text>
-    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Storebox · GSAP Motion Platform</text>
-    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• CyberSentinel · Vuln Scanner</text>
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Production Zero-Downtime Design</text>
+    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• High-Concurrency Edge Routing</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Clean Separation of Concerns</text>
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Cloud-Native Micro-Deployments</text>
   </g>
 
   <!-- COLUMN 2: SECURITY & CRYPTOGRAPHY -->
@@ -59,10 +59,10 @@
     <text x="30" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#8b949e" text-transform="uppercase" letter-spacing="0.5">SECURITY</text>
     <text x="30" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#f0f6fc" font-weight="600">Zero-Knowledge Secrets</text>
     
-    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Client-Side AES-256-GCM</text>
-    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Argon2id Key Derivation</text>
-    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Supabase Row Level Security</text>
-    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• CVSS Vulnerability Risk Scoring</text>
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Zero Plaintext Server Exposure</text>
+    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Defense-in-Depth Cryptography</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Isolated Memory State Lifecycles</text>
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Proactive Vulnerability Auditing</text>
   </g>
 
   <!-- COLUMN 3: STACK & INFRASTRUCTURE -->
@@ -71,10 +71,10 @@
     <text x="88" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#8b949e" text-transform="uppercase" letter-spacing="0.5">UPTIME</text>
     <text x="88" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#f0f6fc" font-weight="600">Live Deployments</text>
     
-    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Next.js 14 App Router &amp; React 19</text>
-    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Node.js / Express &amp; Python Flask</text>
-    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• GSAP ScrollTrigger &amp; Lenis Physics</text>
-    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Containerized with Docker &amp; Nginx</text>
+    <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Automated CI/CD Workflows</text>
+    <text x="0" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Sub-100ms P99 Latency Target</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Semantic Versioning &amp; Commits</text>
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">• Accessible Kinetic Interfaces</text>
   </g>
 
   <!-- Bottom Accent Pulse Line -->
