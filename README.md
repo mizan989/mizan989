@@ -6,7 +6,7 @@
   <br /><br />
 
   <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/hero-banner.svg" alt="Md Mizan Identity Spec" width="100%" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=500&lines=Md+Mizan;Full-Stack+Engineer;Software+Developer" alt="Md Mizan Typing Animation" />
   </a>
 
   <br /><br />
@@ -26,9 +26,6 @@
   <a href="mailto:mizanmuhammad20@gmail.com">
     <img src="https://img.shields.io/badge/Email-mizanmuhammad20-161b22?style=flat-square&logo=gmail&logoColor=ea4335&labelColor=0d1117" alt="Email" />
   </a>
-
-  <br /><br />
-  <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
 </div>
 
 <br />
@@ -87,57 +84,68 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 - **Key Capabilities:** Arithmetic, trigonometry, logarithms, powers, roots, factorials, instant Degree (DEG) vs. Radian (RAD) mode switching, memory register controls (M+, M-, MR, MC), and low-strain color themes.
 - **Stack:** `React 18` · `JavaScript` · `Tailwind CSS` · `mathjs`
 
-<div align="center">
-  <br />
-  <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
-</div>
-
 <br />
 
-### 🛠️ Technical Arsenal
+---
 
-<table>
-  <tr>
-    <td width="25%" valign="top"><b>Languages</b></td>
-    <td>TypeScript, JavaScript (ESNext), Python, SQL, HTML5, Modern CSS</td>
-  </tr>
-  <tr>
-    <td width="25%" valign="top"><b>Frontend Engineering</b></td>
-    <td>React 18/19, Next.js 14 (App Router), Tailwind CSS (v3 &amp; v4), GSAP &amp; ScrollTrigger, Framer Motion, Lenis Smooth Scroll, Tiptap</td>
-  </tr>
-  <tr>
-    <td width="25%" valign="top"><b>Backend &amp; Distributed Systems</b></td>
-    <td>Node.js, Express, Flask, PostgreSQL (Supabase), MongoDB Atlas, RESTful APIs</td>
-  </tr>
-  <tr>
-    <td width="25%" valign="top"><b>Security &amp; Cryptography</b></td>
-    <td>Zero-Knowledge Architecture, AES-256-GCM, Argon2id, Row Level Security (RLS), Nmap, Vulnerability Scanning, CVE Risk Assessment</td>
-  </tr>
-  <tr>
-    <td width="25%" valign="top"><b>DevOps &amp; Infrastructure</b></td>
-    <td>Docker, Nginx, Git, GitHub Actions, Vercel, Render, Vite</td>
-  </tr>
-</table>
+### 🛠️ Technical Arsenal & Skills
+
+#### Languages & Core
+<p align="left">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+</p>
+
+#### Frontend Engineering
+<p align="left">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+</p>
+
+#### Backend & Databases
+<p align="left">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/REST_APIs-02569B?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
+</p>
+
+#### Security, DevOps & Infrastructure
+<p align="left">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" alt="Render" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
+  <img src="https://img.shields.io/badge/Nmap-002B36?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Nmap" />
+</p>
+
+---
 
 <div align="center">
   <br />
-  <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
-  <br /><br />
-
-  ### 📊 Activity
+  <h3>📊 Activity</h3>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake.svg" />
     <img alt="Md Mizan Contribution Snake Animation" src="https://raw.githubusercontent.com/mizan989/mizan989/output/github-snake.svg" width="100%" />
   </picture>
-  <br /><br />
-  <a href="https://github.com/mizan989">
-    <img src="https://streak-stats.demolab.com/?user=mizan989&amp;theme=tokyonight&amp;hide_border=true&amp;background=0d1117&amp;border=30363d&amp;stroke=30363d&amp;ring=39d353&amp;fire=58a6ff&amp;currStreakLabel=58a6ff" alt="GitHub Streak Stats" />
-  </a>
 
-  <br /><br />
-  <img src="./assets/animated-divider.svg" width="100%" alt="divider" />
   <br /><br />
 
   <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
