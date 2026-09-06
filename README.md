@@ -1,5 +1,11 @@
 <div align="center">
   <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/portrait.svg" alt="Md Mizan" width="300" />
+  </a>
+
+  <br /><br />
+
+  <a href="https://md-mizan.vercel.app" target="_blank" rel="noopener noreferrer">
     <img src="./assets/header-animation.svg" alt="Md Mizan — Full-Stack &amp; Generative Systems Engineer" width="100%" />
   </a>
 
