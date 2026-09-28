@@ -53,7 +53,7 @@ PROJECTS = [
     {
         "id": "storebox",
         "name": "Storebox",
-        "category": "Motion Platform",
+        "category": "Digital Marketing",
         "accent": (251, 146, 60),   # #FB923C Orange
         "logo_path": "d:/PROJECTS/mizan989/assets/projects/storebox.png",
         "url": "https://github.com/mizan989/Storebox_clone"
