@@ -21,6 +21,10 @@
     <img src="https://img.shields.io/badge/GitHub-mizan989-161b22?style=flat-square&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub" />
   </a>
   &nbsp;
+  <a href="https://www.instagram.com/mizanmohammadd/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Instagram-mizanmohammadd-161b22?style=flat-square&logo=instagram&logoColor=e4405f&labelColor=0d1117" alt="Instagram" />
+  </a>
+  &nbsp;
   <a href="mailto:mizanmuhammad20@gmail.com">
     <img src="https://img.shields.io/badge/Email-mizanmuhammad20-161b22?style=flat-square&logo=gmail&logoColor=ea4335&labelColor=0d1117" alt="Email" />
   </a>
@@ -69,6 +73,7 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logo=react&logoColor=white" alt="Zustand" />
   <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
   <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
 </p>
@@ -78,10 +83,13 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gemini" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/REST_APIs-02569B?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
 </p>
 
 #### Security, DevOps & Infrastructure
