@@ -35,68 +35,31 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 ---
 
 <div align="center">
-  <h3>🚀 Featured Projects</h3>
+  <h3>Featured Projects</h3>
 
   <br />
 
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/TraceSearch-AI_Researcher" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/tracesearch.png" width="64" height="64" alt="TraceSearch" />
-          <br /><br />
-          <b>TraceSearch</b>
-        </a>
-      </td>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/NoVAult-Password_Manager" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/novault.png" width="64" height="64" alt="NoVAult" />
-          <br /><br />
-          <b>NoVAult</b>
-        </a>
-      </td>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/LooseNotion-Notion_Clone" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/loosenotion.png" width="64" height="64" alt="LooseNotion" />
-          <br /><br />
-          <b>LooseNotion</b>
-        </a>
-      </td>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/CyberSentinel-Vulnerability_Scanner" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/cybersentinel.png" width="64" height="64" alt="CyberSentinel" />
-          <br /><br />
-          <b>CyberSentinel</b>
-        </a>
-      </td>
-    </tr>
-  </table>
-
-  <table>
-    <tr>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/Skylio-Weather_App" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/skylio.svg" width="64" height="64" alt="Skylio" />
-          <br /><br />
-          <b>Skylio</b>
-        </a>
-      </td>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/CalcVerse-Scientific_Calculator" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/calcverse.svg" width="64" height="64" alt="CalcVerse" />
-          <br /><br />
-          <b>CalcVerse</b>
-        </a>
-      </td>
-      <td align="center" width="150">
-        <a href="https://github.com/mizan989/Storebox_clone" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/projects/storebox.svg" width="64" height="64" alt="Storebox" />
-          <br /><br />
-          <b>Storebox</b>
-        </a>
-      </td>
-    </tr>
-  </table>
+  <a href="https://github.com/mizan989/TraceSearch-AI_Researcher" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-tracesearch.svg" alt="TraceSearch" width="268" height="82" />
+  </a>
+  <a href="https://github.com/mizan989/NoVAult-Password_Manager" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-novault.svg" alt="NoVAult" width="268" height="82" />
+  </a>
+  <a href="https://github.com/mizan989/LooseNotion-Notion_Clone" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-loosenotion.svg" alt="LooseNotion" width="268" height="82" />
+  </a>
+  <a href="https://github.com/mizan989/CyberSentinel-Vulnerability_Scanner" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-cybersentinel.svg" alt="CyberSentinel" width="268" height="82" />
+  </a>
+  <a href="https://github.com/mizan989/Skylio-Weather_App" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-skylio.svg" alt="Skylio" width="268" height="82" />
+  </a>
+  <a href="https://github.com/mizan989/CalcVerse-Scientific_Calculator" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-calcverse.svg" alt="CalcVerse" width="268" height="82" />
+  </a>
+  <a href="https://github.com/mizan989/Storebox_clone" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/projects/card-storebox.svg" alt="Storebox" width="268" height="82" />
+  </a>
 </div>
 
 ---
