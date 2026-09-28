@@ -39,27 +39,14 @@ Full-Stack & Generative Systems Engineer specializing in zero-knowledge security
 
   <br />
 
-  <a href="https://github.com/mizan989/TraceSearch-AI_Researcher" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-tracesearch.svg" alt="TraceSearch" width="268" height="82" />
-  </a>
-  <a href="https://github.com/mizan989/NoVAult-Password_Manager" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-novault.svg" alt="NoVAult" width="268" height="82" />
-  </a>
-  <a href="https://github.com/mizan989/LooseNotion-Notion_Clone" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-loosenotion.svg" alt="LooseNotion" width="268" height="82" />
-  </a>
-  <a href="https://github.com/mizan989/CyberSentinel-Vulnerability_Scanner" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-cybersentinel.svg" alt="CyberSentinel" width="268" height="82" />
-  </a>
-  <a href="https://github.com/mizan989/Skylio-Weather_App" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-skylio.svg" alt="Skylio" width="268" height="82" />
-  </a>
-  <a href="https://github.com/mizan989/CalcVerse-Scientific_Calculator" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-calcverse.svg" alt="CalcVerse" width="268" height="82" />
-  </a>
-  <a href="https://github.com/mizan989/Storebox_clone" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/projects/card-storebox.svg" alt="Storebox" width="268" height="82" />
-  </a>
+  <a href="https://github.com/mizan989/TraceSearch-AI_Researcher" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-tracesearch.png" alt="TraceSearch" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/NoVAult-Password_Manager" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-novault.png" alt="NoVAult" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/LooseNotion-Notion_Clone" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-loosenotion.png" alt="LooseNotion" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/CyberSentinel-Vulnerability_Scanner" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-cybersentinel.png" alt="CyberSentinel" width="144" height="140" /></a>
+  <br />
+  <a href="https://github.com/mizan989/Skylio-Weather_App" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-skylio.png" alt="Skylio" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/CalcVerse-Scientific_Calculator" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-calcverse.png" alt="CalcVerse" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/Storebox_clone" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-storebox.png" alt="Storebox" width="144" height="140" /></a>
 </div>
 
 ---
