@@ -34,7 +34,8 @@
 
 ### ⚡ About
 
-Full-Stack & Generative Systems Engineer specializing in zero-knowledge security, collaborative SaaS platforms, and high-performance web applications.
+A curious generative-systems engineer and full-stack developer from Kolkata, exploring the intersection of technology, cybersecurity, and creative problem-solving through projects, experiments, and ideas. Drawn to understanding how things work, breaking them apart, and turning concepts into practical products. Always learning, experimenting, and building — with a particular interest in creating things that are useful, thoughtful, and a little different.
+
 
 ---
 
