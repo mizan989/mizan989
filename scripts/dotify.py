@@ -69,32 +69,37 @@ def square_crop(img, fx: float, fy: float):
 def load_grid(path: Path, cols: int, contrast: float, gamma: float,
               cell_aspect: float, square: bool = False,
               focus: tuple[float, float] = (0.5, 0.5),
-              equalize: bool = False, detail: float = 0.0):
-    """Return (width, height, lum[y][x] in 0..1, rgb[y][x]).
+              equalize: bool = False, detail: float = 0.0,
+              saturation: float = 1.0):
+    """Return (width, height, lum[y][x] in 0..1, rgb[y][x], alpha[y][x] in 0..1).
 
     If the source has an alpha channel it is treated as a subject cutout: the
-    image is flattened onto black, and the mask is carried through so nothing
-    is ever drawn outside the subject and so `equalize` only measures the
-    subject's own histogram rather than a huge empty background.
+    image mask is preserved so nothing is drawn outside the subject, and alpha
+    values are returned so dots can be antialiased smoothly at boundaries.
     """
     img = ImageOps.exif_transpose(Image.open(path))
 
+    has_alpha = img.mode in ("RGBA", "LA", "P")
     mask = None
-    if img.mode in ("RGBA", "LA", "P"):
+    if has_alpha:
         img = img.convert("RGBA")
-        if img.split()[3].getextrema()[0] < 250:  # a real cutout, not a stray channel
-            mask = img.split()[3]
-        flat = Image.new("RGBA", img.size, (0, 0, 0, 255))
-        flat.alpha_composite(img)
-        img = flat
-    img = img.convert("RGB")
+        alpha_channel = img.split()[3]
+        if alpha_channel.getextrema()[0] < 250:  # a real cutout, not a stray channel
+            mask = alpha_channel
+    else:
+        img = img.convert("RGB")
 
     if square:
         img = square_crop(img, *focus)
         if mask is not None:
             mask = square_crop(mask, *focus)
 
-    gray = img.convert("L")
+    if has_alpha and mask is not None:
+        flat = Image.new("RGBA", img.size, (0, 0, 0, 255))
+        flat.alpha_composite(img)
+        gray = flat.convert("L")
+    else:
+        gray = img.convert("L")
 
     # A lit face against near-black hair spans a far wider range than the ~10
     # tones a dot ramp can show. Equalising against the subject's own histogram
@@ -109,7 +114,22 @@ def load_grid(path: Path, cols: int, contrast: float, gamma: float,
             radius=radius, percent=round(detail * 100), threshold=0))
     if contrast != 1.0:
         gray = ImageEnhance.Contrast(gray).enhance(contrast)
-        img = ImageEnhance.Contrast(img).enhance(contrast)
+
+    # Process RGB with contrast and saturation
+    if has_alpha:
+        r, g, b, a = img.split()
+        rgb_img = Image.merge("RGB", (r, g, b))
+        if contrast != 1.0:
+            rgb_img = ImageEnhance.Contrast(rgb_img).enhance(contrast)
+        if saturation != 1.0:
+            rgb_img = ImageEnhance.Color(rgb_img).enhance(saturation)
+        r, g, b = rgb_img.split()
+        img = Image.merge("RGBA", (r, g, b, a))
+    else:
+        if contrast != 1.0:
+            img = ImageEnhance.Contrast(img).enhance(contrast)
+        if saturation != 1.0:
+            img = ImageEnhance.Color(img).enhance(saturation)
 
     w, h = img.size
     # cell_aspect is cell width / cell height: 1.0 for square dot cells,
@@ -122,16 +142,23 @@ def load_grid(path: Path, cols: int, contrast: float, gamma: float,
     small_c = img.resize((cols, rows), Image.Resampling.LANCZOS)
 
     gp, cp = small_g.load(), small_c.load()
-    rgb, lum = [], []
+    rgb, lum, alpha = [], [], []
     for y in range(rows):
-        rgb_row, lum_row = [], []
+        rgb_row, lum_row, alpha_row = [], [], []
         for x in range(cols):
-            rgb_row.append(cp[x, y])
+            pixel = cp[x, y]
+            if len(pixel) == 4:
+                rgb_row.append((pixel[0], pixel[1], pixel[2]))
+                alpha_row.append(pixel[3] / 255.0)
+            else:
+                rgb_row.append(pixel)
+                alpha_row.append(1.0)
             v = gp[x, y] / 255.0
             lum_row.append(min(1.0, max(0.0, v ** gamma)))
         rgb.append(rgb_row)
         lum.append(lum_row)
-    return cols, rows, lum, rgb
+        alpha.append(alpha_row)
+    return cols, rows, lum, rgb, alpha
 
 
 def circle_falloff(x, y, cols, rows, feather=0.06):
@@ -186,7 +213,7 @@ def svg_header(w, h, rows, opts):
     )
 
 
-def build_dots(cols, rows, lum, rgb, theme, opts):
+def build_dots(cols, rows, lum, rgb, alpha, theme, opts):
     fg, dim, _ = THEMES[theme]
     cell = opts.cell
     max_r = cell * 0.5 * opts.dot_scale
@@ -195,26 +222,35 @@ def build_dots(cols, rows, lum, rgb, theme, opts):
     for y in range(rows):
         row = []
         for x in range(cols):
-            v = lum[y][x]
-            if opts.invert:
-                v = 1 - v
-            if opts.circle:
-                v *= circle_falloff(x, y, cols, rows)
-            if v < opts.floor:
-                continue
-            r = max_r * (v ** 0.85)
+            a = alpha[y][x] if alpha else 1.0
+            if opts.color:
+                if a < opts.floor:
+                    continue
+                r = max_r * (a ** 0.5)
+            else:
+                v = lum[y][x]
+                if opts.invert:
+                    v = 1 - v
+                if opts.circle:
+                    v *= circle_falloff(x, y, cols, rows)
+                if v < opts.floor:
+                    continue
+                r = max_r * (v ** 0.85)
+
             if r < 0.18:
                 continue
-            cx = x * cell + cell / 2
-            cy = y * cell + cell / 2
+
+            cx = int(x * cell + cell / 2) if (cell % 2 == 0) else round(x * cell + cell / 2, 1)
+            cy = int(y * cell + cell / 2) if (cell % 2 == 0) else round(y * cell + cell / 2, 1)
             if opts.color:
                 cr, cg, cb = rgb[y][x]
                 fill = f"#{cr:02x}{cg:02x}{cb:02x}"
             else:
+                v = lum[y][x]
                 fill = fg if v > 0.42 else dim
             cls = f' class="d l{x % lanes}"' if opts.animate else ""
             row.append(
-                f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.2f}" fill="{fill}"{cls}/>'
+                f'<circle cx="{cx}" cy="{cy}" r="{r:.2f}" fill="{fill}"{cls}/>'
             )
         if not row:
             continue
@@ -225,7 +261,7 @@ def build_dots(cols, rows, lum, rgb, theme, opts):
     return "".join(out), cols * cell, rows * cell
 
 
-def build_binary(cols, rows, lum, rgb, theme, opts):
+def build_binary(cols, rows, lum, rgb, alpha, theme, opts):
     fg, dim, _ = THEMES[theme]
     cell = opts.cell
     lanes = opts.lanes
@@ -236,12 +272,15 @@ def build_binary(cols, rows, lum, rgb, theme, opts):
     for y in range(rows):
         row = []
         for x in range(cols):
+            a = alpha[y][x] if alpha else 1.0
+            if a < opts.floor:
+                continue
             v = lum[y][x]
             if opts.invert:
                 v = 1 - v
             if opts.circle:
                 v *= circle_falloff(x, y, cols, rows)
-            if v < opts.floor:
+            if v < opts.floor and not opts.color:
                 continue
             # deterministic-but-scattered bit choice, seeded by position + value
             bit = "1" if ((x * 7 + y * 13 + int(v * 37)) % 3) else "0"
@@ -317,21 +356,23 @@ def main(argv=None):
                    help="output path WITHOUT extension (default: assets/portrait)")
     p.add_argument("--mode", choices=("dots", "binary", "ascii", "braille"),
                    default="dots")
-    p.add_argument("--cols", type=int, default=88, help="dots across (default 88)")
-    p.add_argument("--cell", type=float, default=10.0, help="SVG units per cell")
-    p.add_argument("--dot-scale", type=float, default=0.92,
-                   help="max dot diameter as a fraction of the cell")
+    p.add_argument("--cols", type=int, default=100, help="dots across (default 100)")
+    p.add_argument("--cell", type=float, default=8.0, help="SVG units per cell (default 8.0)")
+    p.add_argument("--dot-scale", type=float, default=0.65,
+                   help="max dot diameter as a fraction of the cell (default 0.65)")
     p.add_argument("--gamma", type=float, default=1.0,
                    help="<1 brightens midtones, >1 darkens them")
-    p.add_argument("--contrast", type=float, default=1.25)
+    p.add_argument("--contrast", type=float, default=1.08)
+    p.add_argument("--saturation", type=float, default=1.12,
+                   help="color saturation multiplier (default 1.12)")
     p.add_argument("--equalize", action="store_true",
                    help="equalise against the subject's own histogram — the fix "
                         "for a lit face against dark hair losing all shadow detail")
     p.add_argument("--detail", type=float, default=0.0, metavar="N",
                    help="local-contrast boost, 0-1.5. Puts facial structure back "
                         "after --equalize flattens it; 0.5 is a good start")
-    p.add_argument("--floor", type=float, default=0.06,
-                   help="drop cells dimmer than this (keeps the file small)")
+    p.add_argument("--floor", type=float, default=0.15,
+                   help="drop cells dimmer/more transparent than this (default 0.15)")
     p.add_argument("--threshold", type=float, default=0.45,
                    help="on/off cutoff for braille mode")
     p.add_argument("--cell-aspect", type=float, default=1.0,
@@ -376,10 +417,11 @@ def main(argv=None):
         sys.exit(f"--focus wants two numbers like 0.55,0.42 (got {args.focus!r})")
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    cols, rows, lum, rgb = load_grid(args.image, args.cols, args.contrast,
-                                     args.gamma, args.cell_aspect,
-                                     args.square, (fx, fy),
-                                     args.equalize, args.detail)
+    cols, rows, lum, rgb, alpha = load_grid(args.image, args.cols, args.contrast,
+                                            args.gamma, args.cell_aspect,
+                                            args.square, (fx, fy),
+                                            args.equalize, args.detail,
+                                            args.saturation)
 
     if args.mode in ("ascii", "braille"):
         text = (build_ascii if args.mode == "ascii" else build_braille)(
@@ -394,7 +436,7 @@ def main(argv=None):
     # renders would be byte-identical. Emit one theme-neutral file instead.
     themes = ("dark",) if args.color else ("dark", "light")
     for theme in themes:
-        body, w, h = builder(cols, rows, lum, rgb, theme, args)
+        body, w, h = builder(cols, rows, lum, rgb, alpha, theme, args)
         svg = svg_header(w, h, rows, args) + body + "</g></svg>"
         stem = args.out.name if args.color else f"{args.out.name}-{theme}"
         dest = args.out.with_name(f"{stem}.svg")
