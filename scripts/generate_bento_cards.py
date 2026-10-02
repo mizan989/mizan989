@@ -1,5 +1,11 @@
 import os
+import io
+import base64
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(SCRIPT_DIR)
+ASSETS_DIR = os.path.join(ROOT_DIR, "assets", "projects")
 
 PROJECTS = [
     {
@@ -7,7 +13,7 @@ PROJECTS = [
         "name": "TraceSearch",
         "category": "AI Research",
         "accent": (45, 212, 191),   # #2DD4BF Teal / Emerald
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/tracesearch.png",
+        "logo_path": os.path.join(ASSETS_DIR, "tracesearch.png"),
         "url": "https://github.com/mizan989/TraceSearch-AI_Researcher"
     },
     {
@@ -15,7 +21,7 @@ PROJECTS = [
         "name": "NoVAult",
         "category": "Security Vault",
         "accent": (56, 189, 248),   # #38BDF8 Cyber Blue
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/novault.png",
+        "logo_path": os.path.join(ASSETS_DIR, "novault.png"),
         "url": "https://github.com/mizan989/NoVAult-Password_Manager"
     },
     {
@@ -23,7 +29,7 @@ PROJECTS = [
         "name": "LooseNotion",
         "category": "Workspace",
         "accent": (167, 139, 250),  # #A78BFA Purple
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/loosenotion.png",
+        "logo_path": os.path.join(ASSETS_DIR, "loosenotion.png"),
         "url": "https://github.com/mizan989/LooseNotion-Notion_Clone"
     },
     {
@@ -31,15 +37,15 @@ PROJECTS = [
         "name": "CyberSentinel",
         "category": "Scanner",
         "accent": (248, 113, 113),  # #F87171 Red / Coral
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/cybersentinel.png",
+        "logo_path": os.path.join(ASSETS_DIR, "cybersentinel.png"),
         "url": "https://github.com/mizan989/CyberSentinel-Vulnerability_Scanner"
     },
     {
         "id": "skylio",
         "name": "Skylio",
-        "category": "Weather UI",
+        "category": "Weather App",
         "accent": (251, 191, 36),   # #FBBF24 Amber / Gold
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/skylio.png",
+        "logo_path": os.path.join(ASSETS_DIR, "skylio.png"),
         "url": "https://github.com/mizan989/Skylio-Weather_App"
     },
     {
@@ -47,7 +53,7 @@ PROJECTS = [
         "name": "CalcVerse",
         "category": "Calculator",
         "accent": (52, 211, 153),   # #34D399 Green
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/calcverse.png",
+        "logo_path": os.path.join(ASSETS_DIR, "calcverse.png"),
         "url": "https://github.com/mizan989/CalcVerse-Scientific_Calculator"
     },
     {
@@ -55,16 +61,27 @@ PROJECTS = [
         "name": "Storebox",
         "category": "Digital Marketing",
         "accent": (251, 146, 60),   # #FB923C Orange
-        "logo_path": "d:/PROJECTS/mizan989/assets/projects/storebox.png",
+        "logo_path": os.path.join(ASSETS_DIR, "storebox.png"),
         "url": "https://github.com/mizan989/Storebox_clone"
     }
 ]
 
+def get_cropped_logo(logo_path):
+    """
+    Loads logo image and crops to its non-transparent bounding box
+    to ensure all logos have identical framing and zero stray margins.
+    """
+    raw = Image.open(logo_path).convert('RGBA')
+    bbox = raw.getbbox()
+    if bbox:
+        raw = raw.crop(bbox)
+    return raw
+
 def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
     """
-    Creates a Bento App Tile at 2x resolution.
-    Target display size: 144px x 140px
-    Internal canvas: 288px x 280px
+    Creates a Bento App Tile at 2x Retina resolution (288px x 280px).
+    Target display size: 144px x 140px.
+    All logos are equalized to the exact same size inside the container.
     """
     w = target_w * scale
     h = target_h * scale
@@ -91,7 +108,6 @@ def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
     card_rect = (card_margin, card_margin, w - card_margin, h - card_margin)
     card_radius = int(16 * scale)
     
-    # Card surface fill: dark glass (#161b22)
     draw.rounded_rectangle(
         card_rect,
         radius=card_radius,
@@ -112,7 +128,7 @@ def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
     im = Image.alpha_composite(im, top_glow)
     draw = ImageDraw.Draw(im)
 
-    # 4. Logo Container & Logo
+    # 4. Logo Container & Logo (Unified exact size for all logos)
     icon_box_size = int(50 * scale)
     icon_x = (w - icon_box_size) // 2
     icon_y = int(20 * scale)
@@ -126,14 +142,14 @@ def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
         width=int(1.2 * scale)
     )
 
-    # Load and place project logo
-    logo_raw = Image.open(p["logo_path"]).convert('RGBA')
+    # Load, crop, and place project logo with identical dimensions
+    logo_raw = get_cropped_logo(p["logo_path"])
     logo_size = int(38 * scale)
-    logo_raw = logo_raw.resize((logo_size, logo_size), Image.Resampling.LANCZOS)
+    logo_resized = logo_raw.resize((logo_size, logo_size), Image.Resampling.LANCZOS)
     
     logo_px = icon_x + (icon_box_size - logo_size) // 2
     logo_py = icon_y + (icon_box_size - logo_size) // 2
-    im.paste(logo_raw, (logo_px, logo_py), logo_raw)
+    im.paste(logo_resized, (logo_px, logo_py), logo_resized)
 
     # 5. Project Name Typography
     font_title = ImageFont.truetype("segoeuib.ttf", int(14.5 * scale))
@@ -168,15 +184,95 @@ def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
 
     return im
 
+def create_bento_tile_svg(p, target_w=144, target_h=140):
+    """
+    Creates a responsive, dark-glass Bento App Tile SVG (144px x 140px).
+    Matches the exact layout, geometry, typography, and logo proportions as the Retina PNG.
+    """
+    w = target_w
+    h = target_h
+    accent_rgb = p["accent"]
+    accent_hex = f"#{accent_rgb[0]:02x}{accent_rgb[1]:02x}{accent_rgb[2]:02x}"
+    pid = p["id"]
+    name = p["name"]
+    category = p["category"]
+
+    # Prepare base64 PNG of cropped logo at 2x resolution (76x76) for crisp rendering
+    logo_raw = get_cropped_logo(p["logo_path"])
+    logo_size_px = 76
+    logo_im = logo_raw.resize((logo_size_px, logo_size_px), Image.Resampling.LANCZOS)
+    buf = io.BytesIO()
+    logo_im.save(buf, format='PNG', optimize=True)
+    b64_logo = f"data:image/png;base64,{base64.b64encode(buf.getvalue()).decode('ascii')}"
+
+    # Calculate pill width dynamically based on font metrics
+    try:
+        font_cat = ImageFont.truetype("segoeui.ttf", 21)
+        cb = font_cat.getbbox(category)
+        pill_w = (cb[2] - cb[0]) / 2 + 14
+    except Exception:
+        pill_w = len(category) * 6.5 + 16
+    pill_h = 18
+    pill_x = (w - pill_w) / 2
+    pill_y = 104
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" fill="none">
+  <defs>
+    <radialGradient id="glow-{pid}" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="{accent_hex}" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="{accent_hex}" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="topglow-{pid}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{accent_hex}" stop-opacity="0" />
+      <stop offset="20%" stop-color="{accent_hex}" stop-opacity="0.8" />
+      <stop offset="80%" stop-color="{accent_hex}" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="{accent_hex}" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow Behind Logo -->
+  <circle cx="72" cy="48" r="38" fill="url(#glow-{pid})" />
+
+  <!-- Card Background Surface (#161b22) -->
+  <rect x="2" y="2" width="140" height="136" rx="16" fill="#161b22" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Top Accent Bar -->
+  <rect x="14" y="2" width="116" height="2.5" rx="1.25" fill="url(#topglow-{pid})" />
+
+  <!-- Logo Container (#21262d) -->
+  <rect x="47" y="20" width="50" height="50" rx="12" fill="#21262d" stroke="#30363d" stroke-width="1.2" />
+
+  <!-- Project Logo (Uniform 38x38 Size) -->
+  <image x="53" y="26" width="38" height="38" href="{b64_logo}" />
+
+  <!-- Project Name -->
+  <text x="72" y="93.5" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" letter-spacing="-0.2" text-anchor="middle">{name}</text>
+
+  <!-- Category Pill Badge -->
+  <rect x="{pill_x:.1f}" y="{pill_y}" width="{pill_w:.1f}" height="{pill_h}" rx="9" fill="#21262d" fill-opacity="0.85" stroke="#30363d" stroke-width="0.8" />
+  <text x="72" y="{pill_y + 12.5}" fill="{accent_hex}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">{category}</text>
+</svg>'''
+    return svg
+
 def main():
-    out_dir = "d:/PROJECTS/mizan989/assets/projects"
-    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(ASSETS_DIR, exist_ok=True)
     
+    print("Generating Bento App Tiles (both 2x Retina PNG and Vector SVG)...")
     for p in PROJECTS:
+        pid = p["id"]
+        
+        # 1. Generate 2x Retina PNG (288x280 displayed at 144x140)
         tile_im = create_bento_tile_png(p, target_w=144, target_h=140, scale=2)
-        tile_path = os.path.join(out_dir, f"tile-{p['id']}.png")
-        tile_im.save(tile_path, "PNG", optimize=True)
-        print(f"Generated {tile_path} ({os.path.getsize(tile_path)} bytes)")
+        tile_png_path = os.path.join(ASSETS_DIR, f"tile-{pid}.png")
+        tile_im.save(tile_png_path, "PNG", optimize=True)
+        print(f"Generated PNG: {tile_png_path} ({os.path.getsize(tile_png_path)} bytes)")
+
+        # 2. Generate Bento Tile SVG (144x140)
+        svg_content = create_bento_tile_svg(p, target_w=144, target_h=140)
+        tile_svg_path = os.path.join(ASSETS_DIR, f"tile-{pid}.svg")
+        with open(tile_svg_path, "w", encoding="utf-8") as f:
+            f.write(svg_content)
+        print(f"Generated SVG: {tile_svg_path} ({len(svg_content)} bytes)")
 
 if __name__ == "__main__":
     main()
