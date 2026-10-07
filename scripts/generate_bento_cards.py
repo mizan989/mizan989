@@ -63,6 +63,14 @@ PROJECTS = [
         "accent": (251, 146, 60),   # #FB923C Orange
         "logo_path": os.path.join(ASSETS_DIR, "storebox.png"),
         "url": "https://github.com/mizan989/Storebox_clone"
+    },
+    {
+        "id": "mola",
+        "name": "Mola",
+        "category": "Web Auditor",
+        "accent": (96, 165, 250),   # #60A5FA Blue
+        "logo_path": os.path.join(ASSETS_DIR, "mola.png"),
+        "url": "https://github.com/mizan989/Mola-Web_Auditor"
     }
 ]
 

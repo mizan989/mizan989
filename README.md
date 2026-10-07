@@ -52,6 +52,7 @@ A curious generative-systems engineer and full-stack developer from Kolkata, exp
   <a href="https://github.com/mizan989/Skylio-Weather_App" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-skylio.png" alt="Skylio" width="144" height="140" /></a>
   <a href="https://github.com/mizan989/CalcVerse-Scientific_Calculator" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-calcverse.png" alt="CalcVerse" width="144" height="140" /></a>
   <a href="https://github.com/mizan989/Storebox_clone" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-storebox.png" alt="Storebox" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/Mola-Web_Auditor" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-mola.png" alt="Mola" width="144" height="140" /></a>
 </div>
 
 ---
