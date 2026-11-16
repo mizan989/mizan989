@@ -53,6 +53,9 @@ A curious generative-systems engineer and full-stack developer from Kolkata, exp
   <a href="https://github.com/mizan989/CalcVerse-Scientific_Calculator" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-calcverse.png" alt="CalcVerse" width="144" height="140" /></a>
   <a href="https://github.com/mizan989/Storebox_clone" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-storebox.png" alt="Storebox" width="144" height="140" /></a>
   <a href="https://github.com/mizan989/Mola-Web_Auditor" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-mola.png" alt="Mola" width="144" height="140" /></a>
+  <br />
+  <a href="https://github.com/mizan989/getabreak-focus_app" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-getabreak.png" alt="GetABreak" width="144" height="140" /></a>
+  <a href="https://github.com/mizan989/wordo" target="_blank" rel="noopener noreferrer"><img src="./assets/projects/tile-wordo.png" alt="Wordo" width="144" height="140" /></a>
 </div>
 
 ---
@@ -64,6 +67,8 @@ A curious generative-systems engineer and full-stack developer from Kolkata, exp
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
@@ -92,6 +97,14 @@ A curious generative-systems engineer and full-stack developer from Kolkata, exp
   <img src="https://img.shields.io/badge/REST_APIs-02569B?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" />
   <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
+</p>
+
+#### Android & Systems
+<p align="left">
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
 </p>
 
 #### Security, DevOps & Infrastructure

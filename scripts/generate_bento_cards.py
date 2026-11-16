@@ -71,6 +71,22 @@ PROJECTS = [
         "accent": (96, 165, 250),   # #60A5FA Blue
         "logo_path": os.path.join(ASSETS_DIR, "mola.png"),
         "url": "https://github.com/mizan989/Mola-Web_Auditor"
+    },
+    {
+        "id": "getabreak",
+        "name": "GetABreak",
+        "category": "Focus App",
+        "accent": (74, 222, 128),   # #4ADE80 Green / Wellness
+        "logo_path": os.path.join(ASSETS_DIR, "getabreak.png"),
+        "url": "https://github.com/mizan989/getabreak-focus_app"
+    },
+    {
+        "id": "wordo",
+        "name": "Wordo",
+        "category": "Word Game",
+        "accent": (251, 191, 36),   # #FBBF24 Amber / Word Game
+        "logo_path": os.path.join(ASSETS_DIR, "wordo.png"),
+        "url": "https://github.com/mizan989/wordo"
     }
 ]
 
