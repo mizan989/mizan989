@@ -83,22 +83,45 @@ PROJECTS = [
     {
         "id": "wordo",
         "name": "Wordo",
-        "category": "Word Game",
-        "accent": (251, 191, 36),   # #FBBF24 Amber / Word Game
+        "category": "Word Processor",
+        "accent": (59, 130, 246),   # #3B82F6 Blue
         "logo_path": os.path.join(ASSETS_DIR, "wordo.png"),
         "url": "https://github.com/mizan989/wordo"
     }
 ]
 
+def get_font(font_name, size, is_bold=False):
+    candidates = [
+        font_name,
+        "/home/mizan/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/share/fonts/truetype/LiberationSans-" + ("Bold.ttf" if is_bold else "Regular.ttf"),
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-" + ("Bold.ttf" if is_bold else "ttf"),
+        "/usr/share/fonts/truetype/liberation/LiberationSans-" + ("Bold.ttf" if is_bold else "Regular.ttf")
+    ]
+    for candidate in candidates:
+        try:
+            return ImageFont.truetype(candidate, size)
+        except Exception:
+            pass
+    return ImageFont.load_default()
+
 def get_cropped_logo(logo_path):
     """
     Loads logo image and crops to its non-transparent bounding box
     to ensure all logos have identical framing and zero stray margins.
+    Uses an alpha threshold to eliminate faint/ghost edge artifacts.
     """
     raw = Image.open(logo_path).convert('RGBA')
-    bbox = raw.getbbox()
-    if bbox:
-        raw = raw.crop(bbox)
+    import numpy as np
+    arr = np.array(raw)
+    alpha = arr[:, :, 3]
+    rows = np.where(np.any(alpha >= 10, axis=1))[0]
+    cols = np.where(np.any(alpha >= 10, axis=0))[0]
+    if len(rows) and len(cols):
+        raw = raw.crop((cols[0], rows[0], cols[-1] + 1, rows[-1] + 1))
+    else:
+        bbox = raw.getbbox()
+        if bbox:
+            raw = raw.crop(bbox)
     return raw
 
 def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
@@ -176,7 +199,7 @@ def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
     im.paste(logo_resized, (logo_px, logo_py), logo_resized)
 
     # 5. Project Name Typography
-    font_title = ImageFont.truetype("segoeuib.ttf", int(14.5 * scale))
+    font_title = get_font("segoeuib.ttf", int(14.5 * scale), is_bold=True)
     name = p["name"]
     bbox = font_title.getbbox(name)
     title_w = bbox[2] - bbox[0]
@@ -185,7 +208,7 @@ def create_bento_tile_png(p, target_w=144, target_h=140, scale=2):
     draw.text((title_x, title_y), name, fill=(240, 246, 252, 255), font=font_title)
 
     # 6. Category Pill Badge
-    font_cat = ImageFont.truetype("segoeui.ttf", int(10.5 * scale))
+    font_cat = get_font("segoeui.ttf", int(10.5 * scale), is_bold=False)
     cat = p["category"]
     cat_bbox = font_cat.getbbox(cat)
     cat_text_w = cat_bbox[2] - cat_bbox[0]
@@ -231,7 +254,7 @@ def create_bento_tile_svg(p, target_w=144, target_h=140):
 
     # Calculate pill width dynamically based on font metrics
     try:
-        font_cat = ImageFont.truetype("segoeui.ttf", 21)
+        font_cat = get_font("segoeui.ttf", 21, is_bold=False)
         cb = font_cat.getbbox(category)
         pill_w = (cb[2] - cb[0]) / 2 + 14
     except Exception:
